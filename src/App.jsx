@@ -4,7 +4,11 @@ import Contact from './components/Contact'
 import Home from './components/Home'
 import About from './components/About'
 import Layout from './components/Layout'
-import Login from './components/Authpages/Login'
+import AuthRoutes from './Authpages/AuthRoutes'
+import Login from './Authpages/Login'
+import Signup from './Authpages/Signup'
+import Resetpass from './Authpages/Resetpass'
+
 
 const App = () => {
   return (
@@ -15,7 +19,11 @@ const App = () => {
             <Route path ='/Contact' element={<Contact/>}></Route>
             <Route path ='/Home' element={<Home/>}></Route>
             <Route path ='/About' element={<About/>}></Route>
+          </Route>
+          <Route path ='/' element ={<AuthRoutes/>}>
             <Route path ='/Login' element={<Login/>}></Route>
+            <Route path='/SignUp' element={<Signup/>}></Route>
+            <Route path='/Reset' element={<Resetpass/>}></Route>
           </Route>
         </Routes>
       </Router>

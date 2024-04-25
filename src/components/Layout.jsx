@@ -10,11 +10,13 @@ const Layout = () => {
     <div>
         <Header/>
     </div>
-    <div>  
+    <div className='flex justify-between mx-5'>
+    <div class>  
         <Navbar/>
     </div> 
-    <div className='border p-48 border-blue-600 bg-orange-300' > 
+    <div className='border p-48 border-blue-600 rounded-md h-[87vh] w-[80%] mt-5 bg-orange-300' > 
         <Outlet/>
+    </div>
     </div>
   </section> 
   )
